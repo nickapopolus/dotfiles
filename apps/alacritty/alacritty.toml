@@ -1,0 +1,12 @@
+# $HOME/.config/alacritty/alacritty.toml
+# by Rito Ghosh 2023-10-06
+
+[window]
+
+opacity = 0.99
+
+padding.x = 5
+padding.y = 5
+
+
+
