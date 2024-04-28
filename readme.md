@@ -4,9 +4,23 @@ I am still in the infancy ofthe dotfiles journey. I have terrible configs that n
 
 ## Installation
 
-I currently have this set up to bootstrap but only if you clone the repo into ~/dotfiles. After cloning run
+I currently have this set up to bootstrap but only if you clone the repo into ~/dotfiles. Will eventually set this up to grab the dynamic directory so you can store /dotfiles anywhere.
+
+### Brew Installs
+
+Brew installs are a dependancy of the config files. Right now it is only nerdfont files, but eventually, I will add application taps for all my apps and even install homebrew itself.
+
+```sh
+cd ~/dotfiles
+sh brewinstalls.sh
+```
+### Config Bootstrapping
+
+This file creates all the needed config directories and symlinks to the files in this repo.
 
 ```sh
 cd ~/dotfiles
 bash bootstrap.sh
 ```
+
+
