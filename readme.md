@@ -7,8 +7,6 @@ I am still in the infancy ofthe dotfiles journey. I have terrible configs that n
 I currently have this set up to bootstrap but only if you clone the repo into ~/dotfiles. After cloning run
 
 ```sh
-mkdir ~/.config/alacritty
-mkdir ~/.config/nvim
 cd ~/dotfiles
 bash bootstrap.sh
 ```
