@@ -1,3 +1,4 @@
+
 alias webstorm="/Users/nicholasconstantine/JBShell/webstorm" 
 alias sb="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/SecondBrain"
 #React Native Android vars
@@ -8,10 +9,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.composer/vendor/bin:$PATH"
 export "PATH=$PATH:/$HOME/.config/alacritty"
 
-eval "$(direnv hook zsh)"
-eval "$(rbenv init - zsh)"
-eval "$(starship init zsh)"
 
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-ZSH_HIGHLIGHT_HIGHLIGHTERS+=(brackets pattern cursor)
+eval "$(starship init bash)"

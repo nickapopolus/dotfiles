@@ -63,3 +63,10 @@ for font in "${fonts_list[@]}"
 do
   brew install --cask "$font"
 done
+
+# Install Ripgrep for Telescope
+brew install ripgrep
+
+# zsh plugins
+brew install zsh-syntax-highlighting
+brew install zsh-autocomplete

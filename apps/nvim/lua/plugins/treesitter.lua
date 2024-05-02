@@ -1,6 +1,6 @@
 -- Nvim Treesitter Configs
 return {
-  "nvim-treesitter/nvim-treesitter", 
+  "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
   local tsconfig = require("nvim-treesitter.configs")
@@ -38,6 +38,7 @@ return {
       "typescript",
       "tsx",
       "vim",
+      "vimdoc",
       "xml",
       "yaml",
     },
