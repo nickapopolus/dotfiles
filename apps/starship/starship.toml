@@ -3,7 +3,50 @@
 
 # Inserts a blank line between shell prompts
 add_newline = true
+scan_timeout = 200
+command_timeout = 1000
+
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+success_symbol = "[\uf0a9](bold green)" # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = "[\uf0a9](bold purple)"
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = false
+
+[nodejs]
+format = "[\ued0d \ue628 ](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[golang]
+format = "[\ue627 ](bold cyan) "
+
+[lua]
+format = "[\ue620 ](bold blue) "
+
+[localip]
+ssh_only = true
+format = '@[$localipv4](bold red) '
+disabled = false
+
+[git_branch]
+format = "[$symbol$branch(:remote_branch) ](purple)"
+
+[git_commit]
+only_detached = false
+tag_disabled = false
+
+[git_metrics]
+disabled = false
+
+[git_status]
+ahead = "[⇡$count](green)"
+diverged = "[⇕](purple)[⇡$ahead_count](green)[⇣$behind_count](yellow)"
+behind = "[⇣$count](yellow)"
+conflicted = "[!=](red)"

@@ -69,4 +69,4 @@ brew install ripgrep
 
 # zsh plugins
 brew install zsh-syntax-highlighting
-brew install zsh-autocomplete
+brew install zsh-autosuggestions
