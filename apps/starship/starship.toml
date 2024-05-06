@@ -6,6 +6,96 @@ add_newline = true
 scan_timeout = 200
 command_timeout = 1000
 
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_branch\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$fill\
+$git_commit\
+$cmd_duration\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$line_break\
+$character"""
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
@@ -50,3 +140,27 @@ ahead = "[⇡$count](green)"
 diverged = "[⇕](purple)[⇡$ahead_count](green)[⇣$behind_count](yellow)"
 behind = "[⇣$count](yellow)"
 conflicted = "[!=](red)"
+style = 'bold green'
+
+[time]
+disabled = false
+format = "[$time ]($style)"
+
+[docker_context]
+format = "[\uf308 ](blue)"
+
+[python]
+format = "[\ue73c ](bold yellow)"
+
+[rust]
+format = "[\ue7a8 ](bold red)"
+
+[shell]
+disabled = false
+
+[php]
+format = "[\ue73d ](bold blue)"
+
+[cmd_duration]
+min_time = 50
+show_milliseconds = true

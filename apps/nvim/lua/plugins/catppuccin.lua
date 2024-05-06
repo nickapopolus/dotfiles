@@ -1,5 +1,6 @@
 return {
   "catppuccin/nvim", 
+  enabled = false,
   name = "catppuccin", 
   priority = 1000,
   config = function()
@@ -51,7 +52,6 @@ return {
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },
   })
-  
   vim.cmd.colorscheme "catppuccin"
   end
 }

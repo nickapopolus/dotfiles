@@ -10,4 +10,3 @@ return  {
       vim.keymap.set('n', '<leader>fs', ':Neotree filesystem reveal left<CR>')
     end
 }
- 
