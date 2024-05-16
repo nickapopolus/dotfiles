@@ -70,3 +70,7 @@ brew install ripgrep
 # zsh plugins
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
+
+# tmux 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier

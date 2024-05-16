@@ -21,6 +21,9 @@ ln -s ~/dotfiles/apps/starship/starship.toml ~/.config/starship.toml
 # Alacritty
 ln -s ~/dotfiles/apps/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
+# TMUX 
+ln -s ~/dotfiles/apps/tmux/.tmux.conf ~/.tmux.conf
+
 # Neovim
 ln -s ~/dotfiles/apps/nvim/init.lua ~/.config/nvim/init.lua
 ln -s ~/dotfiles/apps/nvim/lua/plugins.lua ~/.config/nvim/lua/plugins.lua
@@ -36,4 +39,7 @@ ln -s ~/dotfiles/apps/nvim/lua/plugins/gruvbox.lua ~/.config/nvim/lua/plugins/gr
 ln -s ~/dotfiles/apps/nvim/lua/plugins/none-ls.lua ~/.config/nvim/lua/plugins/none-ls.lua
 ln -s ~/dotfiles/apps/nvim/lua/plugins/alpha-dashboard.lua ~/.config/nvim/lua/plugins/alpha-dashboard.lua
 ln -s ~/dotfiles/apps/nvim/lua/plugins/completions.lua ~/.config/nvim/lua/plugins/completions.lua
-
+ln -s ~/dotfiles/apps/nvim/lua/plugins/debugging.lua ~/.config/nvim/lua/plugins/debugging.lua
+ln -s ~/dotfiles/apps/nvim/lua/plugins/tmux.lua ~/.config/nvim/lua/plugins/tmux.lua
+ln -s ~/dotfiles/apps/nvim/lua/plugins/obsidian.lua ~/.config/nvim/lua/plugins/obsidian.lua
+ln -s ~/dotfiles/apps/nvim/lua/plugins/vim-test.lua ~/.config/nvim/lua/plugins/vim-test.lua
